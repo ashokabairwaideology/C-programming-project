@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+<title>What Everyone Needs to Know About AngularJS - Codewithc.com</title>
+<body>
+<style>
+body{ font-family:Verdana, Geneva, sans-serif;}
+</style>
+<h1>What Everyone Needs to Know About AngularJS - codewithc.com</h1>
+<div ng-app="" ng-init="colors=[{code:'#000000', name:'Black'},{code:'#FFFFFF', name:'White'},{code:'#FF0000', name:'Red'},{code:'#00FF00', name:'Green'},{code:'#0000FF', name:'Blue'}]">
+ 	<p>Name: <input type="text" ng-model="name"></p>
+  <p>Hello {{name}}!</p>
+  <p>Hello <span ng-bind="name"></span>!</p>
+
+  <p>Available colors</p>
+  <ul>
+    <li ng-repeat="color in colors">
+      {{color.name + ' (' + color.code + ')'}}
+    </li>
+  </ul>
+
+  <p >Select a color</p>
+  <select ng-model="selectedColor" ng-options="color.name for color in colors"></select>
+
+  Currently selected: {{ selectedColor.name + ' (' + selectedColor.code + ')' }}
+  <div style="border:solid 1px black; height:20px" ng-style="{'background-color':selectedColor.code}"></div>
+
+  <p>Filter some colors:</p>
+  <input type="text" ng-model='filterText' />
+  <ul>
+    <li ng-repeat='color in colors | filter:filterText'>{{color.name + ' (' + color.code + ')'}}</li>
+  </ul>
+
+  <p>2*3 is {{ 2*3 }}</p>
+
+</div>
+
+</body>
+</html>
