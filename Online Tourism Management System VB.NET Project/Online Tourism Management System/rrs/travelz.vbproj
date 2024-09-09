@@ -1,0 +1,831 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{45E67E82-1EFB-4425-A4C0-1723AAA33B73}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccProvider>
+    </SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>travelz_150506</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>travelz_150506</RootNamespace>
+    <StartupObject>travelz_150506.Flash</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>travelz_150506.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>travelz_150506.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activity.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activity_Provider.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activ_Voucher.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgentMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agent_Type.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Airline_Travels.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArrivalsTracking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Booking Tracking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Child_Room_Tarif.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="City Master.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonMessag.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Company Master.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Country master.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="countrymaster_report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerTracking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom_Itine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cust_Member.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeparturesTracking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Distance_Mast.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit_cust_Activ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit_Cust_Itenari .vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit_cust_Veh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FerryDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FixedItineraries.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FixItiner_Booking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FixItiner_Sched.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Flash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlightDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hotel Master.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hotel Voucher.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hotel_Chain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hotel_Facilit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hotel_Meal_Tariff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hotel_Room_Tariff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hotel_Season.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hotel_Surcharg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Local Service.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Location Master.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Payment Billing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Room Catg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rptActivityWiseBookings.vb">
+      <DependentUpon>rptActivityWiseBookings.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptagentmast.vb">
+      <DependentUpon>rptagentmast.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptcustbookings.vb">
+      <DependentUpon>rptcustbookings.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptcustbtwdates.vb">
+      <DependentUpon>rptcustbtwdates.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptferryarrdep.vb">
+      <DependentUpon>rptferryarrdep.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptflightarrdep.vb">
+      <DependentUpon>rptflightarrdep.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rpthotelfacilities.vb">
+      <DependentUpon>rpthotelfacilities.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rpthotelmealtariff.vb">
+      <DependentUpon>rpthotelmealtariff.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rpthotelroomtariff.vb">
+      <DependentUpon>rpthotelroomtariff.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptlistofactivities.vb">
+      <DependentUpon>rptlistofactivities.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptlistofactivityproviders.vb">
+      <DependentUpon>rptlistofactivityproviders.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptlistofcities_country.vb">
+      <DependentUpon>rptlistofcities_country.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptlistofcities_state.vb">
+      <DependentUpon>rptlistofcities_state.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptlistofcountries1.vb">
+      <DependentUpon>rptlistofcountries.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptlistofcustomers.vb">
+      <DependentUpon>rptlistofcustomers.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptlistofhotelscitywise.vb">
+      <DependentUpon>rptlistofhotelscitywise.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptlistofhotelsinchain.vb">
+      <DependentUpon>rptlistofhotelsinchain.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptlistofhotelsstatewise.vb">
+      <DependentUpon>rptlistofhotelsstatewise.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptlistoflocations.vb">
+      <DependentUpon>rptlistoflocations.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptlistofownvehicles.vb">
+      <DependentUpon>rptlistofownvehicles.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptlistofownvehicles1.vb">
+      <DependentUpon>rptlistofownvehicles1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptlistofstaff.vb">
+      <DependentUpon>rptlistofstaff.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptlistofstates.vb">
+      <DependentUpon>rptlistofstates.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptlocdist.vb">
+      <DependentUpon>rptlocdist.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptmailistactivityproviders.vb">
+      <DependentUpon>rptmailistactivityproviders.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptmailistairlines.vb">
+      <DependentUpon>rptmailistairlines.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptmailisttravles.vb">
+      <DependentUpon>rptmailisttravles.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptmaillistagents.vb">
+      <DependentUpon>rptmaillistagents.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptmaillistcustomers.vb">
+      <DependentUpon>rptmaillistcustomers.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptmaillisthotels.vb">
+      <DependentUpon>rptmaillisthotels.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptmailliststaff.vb">
+      <DependentUpon>rptmailliststaff.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptvehallo.vb">
+      <DependentUpon>rptvehallo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptVehicle_wise_booking.vb">
+      <DependentUpon>rptVehicle_wise_booking.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Staff_Master.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StateMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tprinvoice.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Tprinvoice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TRACKING_BILLS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Track_Veh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Travels Master.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="travelz.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehicle_Mast.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Veh_DutySlip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Veh_Tariff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Veh_Type.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Veh_Voucher.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Activity.resx">
+      <DependentUpon>Activity.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Activity_Provider.resx">
+      <DependentUpon>Activity_Provider.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Activ_Voucher.resx">
+      <DependentUpon>Activ_Voucher.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgentMaster.resx">
+      <DependentUpon>AgentMaster.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agent_Type.resx">
+      <DependentUpon>Agent_Type.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Airline_Travels.resx">
+      <DependentUpon>Airline_Travels.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArrivalsTracking.resx">
+      <DependentUpon>ArrivalsTracking.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Booking Tracking.resx">
+      <DependentUpon>Booking Tracking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Child_Room_Tarif.resx">
+      <DependentUpon>Child_Room_Tarif.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="City Master.resx">
+      <DependentUpon>City Master.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Code.resx">
+      <DependentUpon>Code.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Company Master.resx">
+      <DependentUpon>Company Master.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Country master.resx">
+      <DependentUpon>Country master.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="countrymaster_report.resx">
+      <DependentUpon>countrymaster_report.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer.resx">
+      <DependentUpon>Customer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerTracking.resx">
+      <DependentUpon>CustomerTracking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom_Itine.resx">
+      <DependentUpon>Custom_Itine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cust_Member.resx">
+      <DependentUpon>Cust_Member.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeparturesTracking.resx">
+      <DependentUpon>DeparturesTracking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Distance_Mast.resx">
+      <DependentUpon>Distance_Mast.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit_cust_Activ.resx">
+      <DependentUpon>edit_cust_Activ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit_Cust_Itenari .resx">
+      <DependentUpon>Edit_Cust_Itenari .vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit_cust_Veh.resx">
+      <DependentUpon>edit_cust_Veh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FerryDetails.resx">
+      <DependentUpon>FerryDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FixedItineraries.resx">
+      <DependentUpon>FixedItineraries.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FixItiner_Booking.resx">
+      <DependentUpon>FixItiner_Booking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FixItiner_Sched.resx">
+      <DependentUpon>FixItiner_Sched.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flash.resx">
+      <DependentUpon>Flash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlightDetails.resx">
+      <DependentUpon>FlightDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hotel Master.resx">
+      <DependentUpon>Hotel Master.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hotel Voucher.resx">
+      <DependentUpon>Hotel Voucher.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hotel_Chain.resx">
+      <DependentUpon>Hotel_Chain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hotel_Facilit.resx">
+      <DependentUpon>Hotel_Facilit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hotel_Meal_Tariff.resx">
+      <DependentUpon>Hotel_Meal_Tariff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hotel_Room_Tariff.resx">
+      <DependentUpon>Hotel_Room_Tariff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hotel_Season.resx">
+      <DependentUpon>Hotel_Season.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hotel_Surcharg.resx">
+      <DependentUpon>Hotel_Surcharg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Local Service.resx">
+      <DependentUpon>Local Service.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Location Master.resx">
+      <DependentUpon>Location Master.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment Billing.resx">
+      <DependentUpon>Payment Billing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportViewer.resx">
+      <DependentUpon>ReportViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Room Catg.resx">
+      <DependentUpon>Room Catg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptActivityWiseBookings.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptActivityWiseBookings.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptagentmast.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptagentmast.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptcustbookings.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptcustbookings.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptcustbtwdates.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptcustbtwdates.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptferryarrdep.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptferryarrdep.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptflightarrdep.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptflightarrdep.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpthotelfacilities.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpthotelfacilities.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpthotelmealtariff.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpthotelmealtariff.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpthotelroomtariff.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpthotelroomtariff.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptlistofactivities.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptlistofactivities.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptlistofactivityproviders.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptlistofactivityproviders.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptlistofcities_country.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptlistofcities_country.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptlistofcities_state.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptlistofcities_state.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptlistofcountries.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptlistofcountries1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptlistofcustomers.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptlistofcustomers.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptlistofhotelscitywise.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptlistofhotelscitywise.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptlistofhotelsinchain.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptlistofhotelsinchain.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptlistofhotelsstatewise.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptlistofhotelsstatewise.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptlistoflocations.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptlistoflocations.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptlistofownvehicles.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptlistofownvehicles.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptlistofownvehicles1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptlistofownvehicles1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptlistofstaff.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptlistofstaff.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptlistofstates.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptlistofstates.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptlocdist.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptlocdist.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptmailistactivityproviders.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptmailistactivityproviders.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptmailistairlines.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptmailistairlines.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptmailisttravles.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptmailisttravles.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptmaillistagents.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptmaillistagents.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptmaillistcustomers.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptmaillistcustomers.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptmaillisthotels.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptmaillisthotels.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptmailliststaff.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptmailliststaff.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptvehallo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptvehallo.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptVehicle_wise_booking.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptVehicle_wise_booking.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_Master.resx">
+      <DependentUpon>Staff_Master.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StateMaster.resx">
+      <DependentUpon>StateMaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tprinvoice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Tprinvoice.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TRACKING_BILLS.resx">
+      <DependentUpon>TRACKING_BILLS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Track_Veh.resx">
+      <DependentUpon>Track_Veh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Travels Master.resx">
+      <DependentUpon>Travels Master.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="travelz.resx">
+      <DependentUpon>travelz.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserMaster.resx">
+      <DependentUpon>UserMaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicle_Mast.resx">
+      <DependentUpon>Vehicle_Mast.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Veh_DutySlip.resx">
+      <DependentUpon>Veh_DutySlip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Veh_Tariff.resx">
+      <DependentUpon>Veh_Tariff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Veh_Type.resx">
+      <DependentUpon>Veh_Type.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Veh_Voucher.resx">
+      <DependentUpon>Veh_Voucher.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{CF845C55-C321-4742-B673-E6212D061ED9}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

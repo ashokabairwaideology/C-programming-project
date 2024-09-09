@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VIP", "http://localhost/VIP/VIP.csproj", "{05186438-832D-499B-8F0B-B4D737C199BC}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{05186438-832D-499B-8F0B-B4D737C199BC}.Debug.ActiveCfg = Debug|.NET
+		{05186438-832D-499B-8F0B-B4D737C199BC}.Debug.Build.0 = Debug|.NET
+		{05186438-832D-499B-8F0B-B4D737C199BC}.Release.ActiveCfg = Release|.NET
+		{05186438-832D-499B-8F0B-B4D737C199BC}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

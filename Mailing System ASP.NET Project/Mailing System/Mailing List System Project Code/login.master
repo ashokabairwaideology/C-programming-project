@@ -1,0 +1,66 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="login.master.cs" Inherits="login" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+  <title>Mailing List System</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Your Website Description" />
+<meta name="keywords" content="keywords, go, here" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <div class="content">
+		
+  <div id="top"> 
+      
+
+    <div class="topright">
+			 	<a href="#"><img src="images/sitemap.gif" alt="Sitemap" /></a> ^ 
+			 	<a href="#"><img src="images/rss.gif" alt="RSS" /></a>				
+			</div>
+		</div>
+		<div id="header">
+			
+			
+		</div>
+	
+			<div id="navcontainer">
+<ul id="navlist">
+<li id="active"><a href="adminlogin.aspx" id="current">Admin</a></li>
+<li><a href="userlogin.aspx" >User</a></li>
+<li><a href="register.aspx" >Register</a></li>
+
+</ul>
+</div>
+			
+		
+		<div id="main">
+            <table style="width: 792px">
+                <tr>
+                    <td colspan="4" rowspan="3">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                </tr>
+                <tr>
+                </tr>
+            </table>
+			
+		</div>
+		
+		<div id="footer">
+			<div class="info">
+				&copy; 2006 Your Site<br />
+      All Rights Reserved</div> 
+    </div>
+	</div>
+    </div>
+    </form>
+</body>
+</html>

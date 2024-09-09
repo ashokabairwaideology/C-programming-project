@@ -1,0 +1,161 @@
+<?php
+// $Id$
+
+/**
+ * Implementation of hook_install().
+ */
+function assignment_feedback_install() {
+  // Create tables.
+  drupal_install_schema('assignment_feedback');
+  variable_set('assignment_feedback_emails', '');
+  variable_set('assignment_feedback_from_email', '');
+  variable_set('assignment_feedback_upload_extensions', '');
+  variable_set('assignment_feedback_node_types', array());
+  /* creating upload folder */
+  $upload_dir = $_SERVER['DOCUMENT_ROOT'] . base_path() . 'sites/default/files/assignment/';
+  if (!is_dir($upload_dir)) {
+  	mkdir($upload_dir);
+  }
+}
+
+/**
+ * Implementation of hook_uninstall().
+ */
+function assignment_feedback_uninstall() {
+  // Remove tables.
+  drupal_uninstall_schema('assignment_feedback');
+  // Remove variables
+  variable_del('assignment_feedback_emails');
+  variable_del('assignment_feedback_from_email');
+  variable_del('assignment_feedback_upload_extensions');
+  variable_del('assignment_feedback_node_types');
+}
+
+/**
+ * Implementation of hook_schema().
+ */
+function assignment_feedback_schema() {
+
+	$schema['assignment_feedback_submissions'] = array(
+		'description' => t('TODO: please describe this table!'),
+		'fields' => array(
+			'id' => array(
+				'description' => t('TODO: please describe this field!'),
+				'type' => 'serial',
+				'not null' => TRUE,
+			),
+			'uid' => array(
+				'description' => t('TODO: please describe this field!'),
+				'type' => 'int',
+				'not null' => TRUE,
+			),
+			'approver_uid' => array(
+				'description' => t('TODO: please describe this field!'),
+				'type' => 'int',
+				'not null' => TRUE,
+			),
+			'nid' => array(
+				'description' => t('TODO: please describe this field!'),
+				'type' => 'int',
+				'not null' => TRUE,
+			),
+			'feedback_type' => array(
+				'description' => t('TODO: please describe this field!'),
+				'type' => 'int',
+				'not null' => TRUE,
+			),
+			'feedback_where' => array(
+				'description' => t('TODO: please describe this field!'),
+				'type' => 'int',
+				'not null' => TRUE,
+			),
+			'timing' => array(
+				'description' => t('TODO: please describe this field!'),
+				'type' => 'varchar',
+				'length' => '6',
+				'not null' => TRUE,
+			),
+			'completion_time' => array(
+				'description' => t('TODO: please describe this field!'),
+				'type' => 'int',
+				'not null' => TRUE,
+			),
+			'comments' => array(
+				'description' => t('TODO: please describe this field!'),
+				'type' => 'text',
+				'size' => 'medium',
+				'not null' => TRUE,
+			),
+			'status' => array(
+				'description' => t('TODO: please describe this field!'),
+				'type' => 'int',
+				'not null' => TRUE,
+			),
+			'disapprove_message' => array(
+				'description' => t('TODO: please describe this field!'),
+				'type' => 'text',
+				'size' => 'medium',
+				'not null' => TRUE,
+			),
+			'approver_timestamp' => array(
+				'description' => t('TODO: please describe this field!'),
+				'type' => 'int',
+				'not null' => TRUE,
+			),
+			'timestamp' => array(
+				'description' => t('TODO: please describe this field!'),
+				'type' => 'int',
+				'not null' => TRUE,
+			),
+		),
+		'primary key' => array('id'),
+	);
+	
+	$schema['assignment_feedback_attachments'] = array(
+		'description' => t('TODO: please describe this table!'),
+		'fields' => array(
+			'id' => array(
+				'description' => t('TODO: please describe this field!'),
+				'type' => 'serial',
+				'not null' => TRUE,
+			),
+			'submission_id' => array(
+				'description' => t('TODO: please describe this field!'),
+				'type' => 'int',
+				'not null' => TRUE,
+			),
+			'filename' => array(
+				'description' => t('TODO: please describe this field!'),
+				'type' => 'varchar',
+				'length' => '255',
+				'not null' => TRUE,
+			),
+			'filepath' => array(
+				'description' => t('TODO: please describe this field!'),
+				'type' => 'varchar',
+				'length' => '500',
+				'not null' => TRUE,
+			),
+			'filemime' => array(
+				'description' => t('TODO: please describe this field!'),
+				'type' => 'varchar',
+				'length' => '50',
+				'not null' => TRUE,
+			),
+			'filesize' => array(
+				'description' => t('TODO: please describe this field!'),
+				'type' => 'int',
+				'not null' => TRUE,
+			),
+			'timestamp' => array(
+				'description' => t('TODO: please describe this field!'),
+				'type' => 'int',
+				'not null' => TRUE,
+			),
+		),
+		'primary key' => array('id'),
+	);
+
+  return $schema;
+}
+

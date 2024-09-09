@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Maintainance.master.cs" Inherits="MaintenanceManager_Maintainance" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 75%;
+        }
+        .style2
+        {
+            width: 720px;
+            height: 220px;
+        }
+        .style3
+        {
+            width: 122px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table align="center" cellpadding="0" cellspacing="0" class="style1">
+            <tr>
+                <td colspan="10">
+                    <img alt="image" class="style2" src="cool%20cabs%20copy.jpg" /></td>
+            </tr>
+            <tr bgcolor="#FF3300">
+                <td>
+                
+               
+                    <asp:LinkButton ID="LinkButton1" runat="server" onclick="LinkButton1_Click" 
+                        PostBackUrl="~/MaintenanceManager/Home.aspx">Home</asp:LinkButton>
+                </td>
+                <td>
+                
+               
+                    <asp:LinkButton ID="LinkButton11" runat="server" 
+                        PostBackUrl="~/MaintenanceManager/viewprofile.aspx">View Profile</asp:LinkButton>
+                </td>
+                <td>
+                
+               
+                    <asp:LinkButton ID="LinkButton12" runat="server" 
+                        PostBackUrl="~/MaintenanceManager/UpdateProfile.aspx">Update Profile</asp:LinkButton>
+                </td>
+                <td class="style3">
+                    <asp:LinkButton ID="LinkButton3" runat="server" 
+                        PostBackUrl="~/MaintenanceManager/VendorDetails.aspx">Vender Details</asp:LinkButton>
+                </td>
+                <td>
+                    <asp:LinkButton ID="LinkButton9" runat="server" 
+                        PostBackUrl="~/MaintenanceManager/View Vender Details.aspx">Edit/DeleteVender</asp:LinkButton>
+                </td>
+                <td>
+                    <asp:LinkButton ID="LinkButton4" runat="server" 
+                        PostBackUrl="~/MaintenanceManager/VechicleDetails.aspx">Vehicle Details</asp:LinkButton>
+                </td>
+                <td>
+                    <asp:LinkButton ID="LinkButton10" runat="server" 
+                        PostBackUrl="~/MaintenanceManager/ViewVehicledetails.aspx">Edit/DeleteVehicle</asp:LinkButton>
+                </td>
+                <td>
+                    <asp:LinkButton ID="LinkButton8" runat="server" 
+                        PostBackUrl="~/MaintenanceManager/VehicleAllocation.aspx">VehicleAllocation</asp:LinkButton>
+                </td>
+                <td>
+                    <asp:LinkButton ID="LinkButton6" runat="server" onclick="LinkButton6_Click" 
+                        PostBackUrl="~/MaintenanceManager/ChangePassword.aspx">Change 
+                    Password</asp:LinkButton>
+                </td>
+                <td>
+                    <asp:LinkButton ID="LinkButton7" runat="server" onclick="LinkButton7_Click" 
+                        PostBackUrl="~/LoginPage.aspx">Logout</asp:LinkButton>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

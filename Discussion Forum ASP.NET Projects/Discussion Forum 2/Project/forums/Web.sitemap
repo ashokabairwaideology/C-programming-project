@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="default.aspx" title="Home Page"  description="">
+        <siteMapNode url="mythreads.aspx" title="My Threads"  description="" />
+		<siteMapNode url="addthread.aspx" title="Add Thread"  description="" />
+        <siteMapNode url="changepassword.aspx" title="Change Password"  description="" />
+		<siteMapNode url="changeprofile.aspx" title="Change Profile"  description="Change profile of the current user" />
+		<siteMapNode url="searchthreads.aspx" title="Search Threads"  description="" />
+    </siteMapNode>
+</siteMap>

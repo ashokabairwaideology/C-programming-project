@@ -1,0 +1,77 @@
+ DATABASE NAME = HASINI
+
+1.create table register ( username varchar(10),
+                                   password varchar(10),
+                                   phoneno varchar(10),
+                                   emailid varchar(20))
+
+2.create table cancelrequest ( customerid varchar(100),
+                                             cancelrequest varchar(30),
+                                             date varchar(15))
+
+3.create table conformationmail ( greetingmail varchar(100),
+                                                  customerid bigint)
+
+4.create table CustmerDetails1( customername varchar(10),
+                                                phoneno varchar(10),
+                                                address varchar(50),
+                                                emailid varchar(20),
+                                                typeofproduct varchar(10),
+                                                productname varchar(15),
+                                                noofproducts varchar(10),
+                                                source varchar(15),
+                                                destination varchar(15),
+                                                destinationaddress varchar(50),
+                                                destinationphno varchar(10),
+                                                date varchar(10),
+                                                time varchar(10),
+                                                customerid identity(100,1))
+
+5.create table feedback1 (feedback varchar(50))
+
+6.create table places ( sno int primary key,
+                                 placename varchar(15))
+
+7.create table weightprice ( weight varchar(15),
+                                         price money))
+
+8.create table placeprice ( place1 varchar(15),
+                                       place2 varchar(15),
+                                       price money))
+
+[alter table placeprice add foreign key(place1)references places(sno)]
+
+9.create table search ( state varchar(15),
+                                  district varchar(15),
+                                  address varchar(50))
+
+10.create table statusreport ( customername varchar(15),
+                                           customerid int,
+                                           source varchar(15),
+                                           destination varchar(15),
+                                           destinationaddress varchar(30),
+                                           flightno varchar(10),
+                                           cargono varchar(10),
+                                           deliveringdate varchar(10),
+                                           status varchar(20))
+
+11.create table login ( username varchar(10),
+                                 password varchar(10))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

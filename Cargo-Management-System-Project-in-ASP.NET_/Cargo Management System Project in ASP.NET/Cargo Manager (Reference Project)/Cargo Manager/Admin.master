@@ -1,0 +1,53 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+     <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <asp:Image ID="Image1" runat="server" ImageUrl="~/images/cargo manager78.gif" Style="z-index: 100;
+            left: 0px; position: absolute; top: -2px" Width="879px" />
+        &nbsp;<br />
+        &nbsp;<br />
+        <asp:Menu ID="Menu1" runat="server" BackColor="#F7F6F3" DynamicHorizontalOffset="2"
+                Font-Bold="True" Font-Names="Arial Narrow" Font-Size="Smaller" ForeColor="#004000"
+                Height="41px" Orientation="Horizontal" StaticSubMenuIndent="10px" Style="z-index: 100;
+                left: 1px; position: absolute; top: 147px" Width="878px">
+                <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <DynamicHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                <DynamicMenuStyle BackColor="#F7F6F3" />
+                <StaticSelectedStyle BackColor="#5D7B9D" />
+                <DynamicSelectedStyle BackColor="#5D7B9D" />
+                <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <Items>
+                    <asp:MenuItem NavigateUrl="~/customerdetailslist.aspx" Text="Custmer Details List"
+                        Value="Custmer Details List"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/conformationdetails.aspx" Text="Conformation Details"
+                        Value="Conformation Details"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/cancelrequestlist.aspx" Text="Customer Cancel Request List"
+                        Value="Customer Cancel Request List"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/statusreport.aspx" Text="Customer Status Reort" Value="Customer Status Reort">
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/feedbackslist.aspx" Text="Feedback List" Value="Feedback List">
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/homepage.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                </Items>
+                <StaticHoverStyle BackColor="#7C6F57" ForeColor="White" />
+            </asp:Menu>
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,165 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="userMasterPage.master.cs" Inherits="User_userMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style15
+        {
+            width: 240px;
+        }
+        .style16
+        {
+            height: 34px;
+        }
+        .style20
+        {
+            width: 100%;
+            height: 230px;
+        }
+        .style21
+        {
+            width: 282px;
+        }
+        .style22
+        {
+            width: 282px;
+            height: 135px;
+        }
+        .style23
+        {
+            height: 135px;
+        }
+        .style24
+        {
+            width: 97%;
+        }
+        .style25
+        {
+            width: 282px;
+            height: 58px;
+        }
+        .style26
+        {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <table class="style20">
+            <tr>
+                <td class="style22">
+                    <asp:Image ID="Image1" runat="server" Height="90%" Width="50%" />
+                </td>
+                <td align="center" class="style23" valign="top">
+                    <asp:Image ID="Image2" runat="server" Height="102px" 
+                        ImageUrl="~/Images/BB1.jpg" Width="766px" />
+                    <span class="style15"><b><span class="style16">
+                    <br />
+        </span>
+                    <table cellpadding="0" cellspacing="0" class="style24">
+                        <tr>
+                            <td align="center">
+                                <asp:TreeView ID="TreeView1" runat="server" style="font-size: medium">
+                                    <Nodes>
+                                        <asp:TreeNode Expanded="False" Text="Profile Setting" Value="Profile Setting">
+                                            <asp:TreeNode NavigateUrl="~/User/ViewProfile.aspx" Text="View Profile" 
+                                                Value="View Profile"></asp:TreeNode>
+                                            <asp:TreeNode NavigateUrl="~/User/UpdateProfile.aspx" Text="Update Profile" 
+                                                Value="Update Profile"></asp:TreeNode>
+                                            <asp:TreeNode NavigateUrl="~/User/change password.aspx" Text="Change Password" 
+                                                Value="New Node"></asp:TreeNode>
+                                        </asp:TreeNode>
+                                    </Nodes>
+                                </asp:TreeView>
+                            </td>
+                            <td>
+                                <span class="style15"><b>
+                                <asp:LinkButton ID="LinkButton9" runat="server" onclick="LinkButton9_Click" 
+                                    PostBackUrl="~/User/userhome.aspx" 
+                                    style="color: #000000; font-size: x-large;"><span class="style15"><b>Home</b></span></asp:LinkButton>
+                                </b></span>
+                            </td>
+                            <td>
+                                <span class="style15"><b>
+                                <asp:LinkButton ID="LinkButton10" runat="server" 
+                                    PostBackUrl="~/User/logout.aspx" 
+                                    style="color: #000000; font-size: x-large; font-family: 'Times New Roman', Times, serif;"><span class="style15"><b>Logout</b></span></asp:LinkButton>
+                                </b></span>
+                            </td>
+                        </tr>
+                    </table>
+                    </b></span>
+                </td>
+            </tr>
+            <tr>
+                <td class="style21" valign=top>
+                    <table class="style20">
+                        <tr>
+                            <td class="style25" align="center">
+                    <asp:LinkButton ID="LinkButton2" runat="server" 
+                        PostBackUrl="~/User/CreateTopic.aspx" 
+                                    style="font-size: large; color: #000000; font-weight: 700;">Create Topic</asp:LinkButton>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style21" align="center">
+                    <asp:LinkButton ID="LinkButton3" runat="server" 
+                        PostBackUrl="~/User/CreateQuestion.aspx" 
+                                    style="font-size: large; color: #000000; font-weight: 700;">Create Question</asp:LinkButton>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style21" align="center">
+                    <asp:LinkButton ID="LinkButton5" runat="server" onclick="LinkButton5_Click" 
+                        PostBackUrl="~/User/PostReply.aspx" 
+                                    style="font-size: large; font-weight: 700; color: #000000;">Post Reply</asp:LinkButton>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style21" align="center">
+                    <asp:LinkButton ID="LinkButton6" runat="server" 
+                        PostBackUrl="~/User/ViewAnswer.aspx" 
+                                    style="font-size: large; font-weight: 700; color: #000000;">View Answers</asp:LinkButton>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td valign="top">
+                    <table class="style20">
+                        <tr>
+                            <td valign=top>
+                                <table class="style26">
+                                    <tr>
+                                        <td>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+&nbsp;&nbsp;&nbsp;
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </div>
+    </form>
+</body>
+</html>

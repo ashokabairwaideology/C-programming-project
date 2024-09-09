@@ -1,0 +1,12 @@
+Welkom in de voorbeeld winkel van FreeWebshop.org. Een gratis winkelwagen script, geschreven in PHP / MySQL.
+
+<img src=gfx/businessman.gif align=right>De winkel is volledig nederlandstalig en ondersteund meerdere additionele talen, zoals engels.
+
+De voordelen op een rijtje:<ul>
+<li><b>Simpele</b> installatie
+<li><b>Eenvoudige</b> configuratie
+<li>Veel <b>handige functies</b> die uw werk vereenvoudigen
+<li><b>Complete</b> order- en klantmanagement module
+<li><b>Gratis</b> ondersteuning en updates
+<li>Ondersteund betalings portals zoals <b>Paypal en iDEAL</b> (voeg zelf anderen toe)
+</ul>

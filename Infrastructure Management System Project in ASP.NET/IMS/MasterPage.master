@@ -1,0 +1,44 @@
+<%@ master language="C#" autoeventwireup="true" inherits="MasterPage, App_Web_kme17h35" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body style="background-color: black">
+    <form id="form1" runat="server">
+    <div style="text-align: left; color: #ffffff; background-colosar: #339999;">
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;<asp:Panel ID="Panel1"
+            runat="server" BackColor="Black" Height="133px" Style="left: 0px; position: relative;
+            top: -20px" Width="950px">
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<asp:Panel ID="Panel2"
+                runat="server" BorderColor="DimGray" BorderStyle="Ridge" Height="97px" Style="left: 25px;
+                position: relative; top: -3px" Width="125px">
+                <asp:Image ID="Image3" runat="server" Height="95px" ImageUrl="~/App_Themes/Theme1/prodmix.bmp"
+                    Style="position: relative" Width="123px" /></asp:Panel>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+            <asp:Image ID="Image1" runat="server" Height="83px" ImageUrl="~/App_Themes/Theme1/eeee.bmp"
+                Style="left: 194px; position: absolute; top: 0px" Width="639px" />
+            <asp:Image ID="Image2" runat="server" Height="40px" ImageUrl="~/App_Themes/Theme1/title.bmp"
+                Style="left: 195px; position: absolute; top: 84px" Width="641px" />
+        </asp:Panel>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+        <asp:LinkButton ID="LinkButton1" runat="server" Font-Bold="True" Font-Italic="True"
+            PostBackUrl="~/login.aspx" Style="left: 852px; position: absolute; top: 135px" ForeColor="Red">LOGOUT</asp:LinkButton>
+    </div>
+        &nbsp;
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server">
+            &nbsp;</asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

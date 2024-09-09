@@ -1,0 +1,270 @@
+<?php
+// $Id$
+
+/**
+ * Implementation of hook_menu().
+ */
+function assignment_feedback_menu()
+{
+  $items = array();
+
+  /* add feedback */
+  $items['feedback/add'] = array(
+    'title' => 'Submit Assignment Feedback',
+    'description' => 'Submit Assignment Feedback',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('add_feedback_form'),
+    'access arguments' => array('create assignment feedback'),
+    'type' => MENU_CALLBACK,
+    'file' => 'feedback.inc',
+  );
+
+  /* add feedback */
+  $items['feedback/show'] = array(
+    'title' => 'Archived Assignment Feedback',
+    'description' => 'Archived Assignment Feedback',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('show_feedback_form'),
+    'access arguments' => array('view assignment feedback'),
+    'type' => MENU_CALLBACK,
+    'file' => 'show_feedback.inc',
+  );
+
+  /* manage feedback */
+  $items['feedback/manage'] = array(
+    'title' => 'Manage Feedback',
+    'description' => 'Manage Assignment Feedback',
+    'page callback' => '_pending_feedbacks',
+    'access callback' => 'user_access',
+    'access arguments' => array('manage assignment feedback'),
+    'file' => 'manage_feedback.inc',
+  );
+  $items['feedback/manage/pending'] = array(
+    'title' => 'Pending Feedback',
+    'description' => 'Pending Assignment Feedback',
+    'page callback' => '_pending_feedbacks',
+    'access callback' => 'user_access',
+    'access arguments' => array('manage assignment feedback'),
+    'type' => MENU_DEFAULT_LOCAL_TASK,
+    'file' => 'manage_feedback.inc',
+    'weight' => 2,
+  );
+  $items['feedback/manage/all'] = array(
+    'title' => 'All Feedback',
+    'description' => 'All Assignment Feedback',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('all_feedbacks_form'),
+    'access callback' => 'user_access',
+    'access arguments' => array('manage assignment feedback'),
+    'type' => MENU_LOCAL_TASK,
+    'file' => 'manage_feedback.inc',
+    'weight' => 3,
+  );
+  $items['feedback/manage/approve'] = array(
+    'title' => 'Manage Assignment Feedback',
+    'description' => 'Manage Assignment Feedback',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('manage_feedback_form'),
+    'access callback' => 'user_access',
+    'access arguments' => array('manage assignment feedback'),
+    'type' => MENU_CALLBACK,
+    'file' => 'manage_feedback.inc',
+    'weight' => 4,
+  );
+  $items['feedback/manage/edit'] = array(
+    'title' => 'Edit Assignment Feedback',
+    'description' => 'Edit Assignment Feedback',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('edit_feedback_form'),
+    'access callback' => 'user_access',
+    'access arguments' => array('manage assignment feedback'),
+    'type' => MENU_CALLBACK,
+    'file' => 'manage_feedback.inc',
+    'weight' => 5,
+  );
+
+  /* for admin */
+  $items['admin/settings/assignment_feedback'] = array(
+    'title' => 'Assignment Feedback Settings',
+    'description' => 'Assignment Feedback Settings', 
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('assignment_feedback_settings_form'),
+    'access arguments' => array('administer assignment feedback'),
+    'type' => MENU_NORMAL_ITEM,
+    'file' => 'settings.inc',
+  );
+
+  return $items;
+}
+
+/**
+ * Implementation of hook_perm().
+ */
+function assignment_feedback_perm() {
+  return array('create assignment feedback', 'view assignment feedback', 'manage assignment feedback', 'administer assignment feedback');
+}
+
+/**
+ * Implementation of hook_nodeapi().
+ */
+function assignment_feedback_nodeapi(&$node, $op, $a3 = NULL, $a4 = NULL)
+{
+	switch ($op) {
+		case 'view':
+			if (in_array($node->type, variable_get('assignment_feedback_node_types', array()))) {
+				$node->feedback_link = l('Submit Your Feedback', 'feedback/add/' . $node->nid, array('attributes' => array('style' => 'color:#0000FF;')));
+				$node->feedback_link .= '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'; 
+				$node->feedback_link .= l('Archived Feedback', 'feedback/show/' . $node->nid, array('attributes' => array('style' => 'color:#0000FF;')));
+			}
+			break;
+  }
+}
+
+/**
+ * Implementation of hook_mail().
+ */
+function assignment_feedback_mail($key, &$message, $params) {
+  global $user;
+  $language = $message['language'];
+
+  switch ($key)
+  {
+    case 'feedback_received':
+      $user_data = user_load($params['feedback_received']['user_id']);
+
+      $message['subject'] = t('[!site_name] We have received your feedback', array('!site_name' => variable_get('site_name', '')), $language->language);
+      $message['body'] = t('
+Dear !user_name,
+
+We have received your following feedback:
+
+Your Email: ' . $user_data->mail . '
+Name of the tutorial: ' . $params['feedback_received']['tutorial_name'] . '
+Feedback Type: ' . $params['feedback_received']['feedback_type'] . '
+Where: ' . $params['feedback_received']['feedback_where'] . '
+Start Time: ' . $params['feedback_received']['timing'] . '
+How long did you take to complete the assignment: ' . $params['feedback_received']['completion_time'] . '
+
+Comment Box :
+' . $params['feedback_received']['comments'] . '
+
+Best Wishes,
+
+!site_name', array('!site_name' => variable_get('site_name', ''), '!user_name' => $user_data->name), $language->language);
+      break;
+
+    case 'feedback_approved':
+      $user_data = user_load($params['feedback_approved']['user_id']);
+
+      $message['subject'] = t('[!site_name] Your feedback has been approved', array('!site_name' => variable_get('site_name', '')), $language->language);
+      $message['body'] = t('
+Dear !user_name,
+
+We have approved your following feedback:
+
+Your Email: ' . $user_data->mail . '
+Name of the tutorial: ' . $params['feedback_approved']['tutorial_name'] . '
+Feedback Type: ' . $params['feedback_approved']['feedback_type'] . '
+Where: ' . $params['feedback_approved']['feedback_where'] . '
+Start Time: ' . $params['feedback_approved']['timing'] . '
+How long did you take to complete the assignment: ' . $params['feedback_approved']['completion_time'] . '
+
+Comment Box :
+' . $params['feedback_approved']['comments'] . '
+
+Best Wishes,
+
+!site_name', array('!site_name' => variable_get('site_name', ''), '!user_name' => $user_data->name), $language->language);
+      break;
+
+    case 'feedback_disapproved':
+      $user_data = user_load($params['feedback_disapproved']['user_id']);
+
+      $message['subject'] = t('[!site_name] Your feedback has been disapproved', array('!site_name' => variable_get('site_name', '')), $language->language);
+      $message['body'] = t('
+Dear !user_name,
+
+We have disapproved your following feedback:
+
+Your Email: ' . $user_data->mail . '
+Name of the tutorial: ' . $params['feedback_disapproved']['tutorial_name'] . '
+Feedback Type: ' . $params['feedback_disapproved']['feedback_type'] . '
+Where: ' . $params['feedback_disapproved']['feedback_where'] . '
+Start Time: ' . $params['feedback_disapproved']['timing'] . '
+How long did you take to complete the assignment: ' . $params['feedback_disapproved']['completion_time'] . '
+
+Comment Box:
+' . $params['feedback_disapproved']['comments'] . '
+
+Reason for disapproval:
+' . $params['feedback_disapproved']['reason'] . '
+
+Best Wishes,
+
+!site_name', array('!site_name' => variable_get('site_name', ''), '!user_name' => $user_data->name), $language->language);
+      break;
+  }
+}
+
+
+/******************************************************************************/
+/**************************** COMMON FUNCTIONS ********************************/
+/******************************************************************************/
+
+function _root_path() {
+  return $_SERVER['DOCUMENT_ROOT'] . base_path();
+}
+
+function _feedback_type($type_id = NULL)
+{
+	if ($type_id) {
+		switch ($type_id) {
+		case 0: return 'Invalid'; break;
+		case 1: return 'Assignment'; break;
+		case 2: return 'Feedback'; break;
+		case 3: return 'Correction'; break;
+		case 4: return 'Question'; break;
+		case 5: return 'Suggestions'; break;
+		case 6: return 'Others'; break;
+		default: return 'Invalid'; break;
+		}
+	} else {
+		return array('0' => 'Please select...', '1' => 'Assignment', '2' => 'Feedback', '3' => 'Correction', '4' => 'Question', '5' => 'Suggestions', '6' => 'Others');
+	}
+}
+
+function _feedback_where($type_id = NULL)
+{
+	if ($type_id) {
+		switch ($type_id) {
+		case 0: return 'Invalid'; break;
+		case 1: return 'General'; break;
+		case 2: return 'Inbetween Tutorial'; break;
+		case 3: return 'End of Tutorial'; break;
+		default: return 'Invalid'; break;
+		}
+	} else {
+		return array('1' => 'General', '2' => 'Inbetween Tutorial', '3' => 'End of Tutorial');
+	}
+}
+
+function _feedback_status($status_id)
+{
+	switch ($status_id) {
+	case 0: return 'Pending'; break;
+	case 1: return 'Approved'; break;
+	case 2: return 'Disapproved'; break;
+	default: return 'Invalid'; break;
+	}
+}
+
+function _check_valid_filename($file_name) {
+  if (!preg_match('/^[0-9a-zA-Z\_\.]+$/', $file_name))
+    return FALSE;
+  else
+    if (substr_count($file_name, ".") > 1)
+      return FALSE;
+    else
+      return TRUE;
+}
+

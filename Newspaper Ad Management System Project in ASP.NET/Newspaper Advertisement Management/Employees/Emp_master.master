@@ -1,0 +1,110 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Emp_master.master.cs" Inherits="Employees_Emp_master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            border-style: solid;
+            border-width: 1px;
+            height: 482px;
+        }
+        .style4
+        {
+            height: 124px;
+            background-color: #00FF00;
+        }
+        .style5
+        {
+            font-size: xx-large;
+            color: #FF00FF;
+            text-transform: uppercase;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .style6
+        {
+            font-style: italic;
+            font-weight: bold;
+            font-size: x-large;
+            height: 22px;
+        }
+        .style7
+        {
+            width: 229px;
+            height: 169px;
+        }
+        .style8
+        {
+            width: 667px;
+            height: 169px;
+        }
+        .style9
+        {
+            width: 117%;
+            height: 31px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table align="center" cellpadding="0" cellspacing="0" class="style1">
+            <tr>
+                <td align="center" class="style4" colspan="2">
+                    &nbsp; <span class="style5">NEWS PAPER PROCLAMATION MONITORING SYSTEM&nbsp;</span></td>
+            </tr>
+            <tr>
+                <td align="center" class="style6" colspan="2">
+                    Welcome:<asp:Label ID="lbl_name" runat="server" style="color: #FF00FF"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td class="style7" style="color: #000000" valign="top">
+                    <asp:TreeView ID="TreeView1" runat="server" style="margin-right: 0px">
+                        <Nodes>
+                            <asp:TreeNode Text="Home" Value="Home" NavigateUrl="~/Employees/Home.aspx"></asp:TreeNode>
+                            <asp:TreeNode Expanded="False" Text="My Account" Value="My Account">
+                                <asp:TreeNode Text="My profile" Value="My profile" 
+                                    NavigateUrl="~/Employees/Myprofile.aspx"></asp:TreeNode>
+                                <asp:TreeNode Text="Change password" Value="Change password" 
+                                    NavigateUrl="~/Employees/Change_pwd.aspx"></asp:TreeNode>
+                            </asp:TreeNode>
+                            <asp:TreeNode Expanded="False" Text="Advertisement Section" 
+                                Value="Advertisement Section">
+                                <asp:TreeNode Text="Add Booking" Value="Add Booking" 
+                                    NavigateUrl="~/Employees/Add_Booking.aspx"></asp:TreeNode>
+                                <asp:TreeNode Text="Advertisement Details" Value="Advertisement Details" 
+                                    NavigateUrl="~/Employees/Advertisement_Details.aspx">
+                                </asp:TreeNode>
+                                <asp:TreeNode Text="Add Booking by Employee" Value="Add Booking by Employee" 
+                                    NavigateUrl="~/Employees/Add_Booking by Emp.aspx">
+                                </asp:TreeNode>
+                            </asp:TreeNode>
+                            <asp:TreeNode Text="Signout" Value="Signout" NavigateUrl="~/login.aspx"></asp:TreeNode>
+                        </Nodes>
+                    </asp:TreeView>
+                    <br />
+                </td>
+                <td class="style8">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <table align="center" cellpadding="0" cellspacing="0" class="style9">
+                            <tr>
+                                <td>
+                                    &nbsp;</td>
+                            </tr>
+                        </table>
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            </table>
+    </div>
+    </form>
+</body>
+</html>

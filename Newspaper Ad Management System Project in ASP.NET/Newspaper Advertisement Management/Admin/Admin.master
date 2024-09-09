@@ -1,0 +1,136 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            height: 116px;
+            
+        }
+        .style2
+        {
+        }
+        .style3
+        {
+            width: 222px;
+        }
+        .style4
+        {
+            font-family: "Times New Roman", Times, serif;
+            font-style: italic;
+            font-size: xx-large;
+            text-transform: uppercase;
+        }
+        .style5
+        {
+            width: 100%;
+            height: 116px;
+            font-style: normal;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body style="color: #FFFFFF; font-size: x-large; font-style: italic; background-color: #FFFFFF" 
+    alink="#ffcccc">
+    <form id="form1" runat="server" 
+   >
+    <table cellpadding="0" cellspacing="0" class="style5" 
+        
+       
+        bgcolor="#66FFCC">
+        <tr>
+            <td align="center" 
+                style="color: #FF00FF; background-color: #CCFF33;" class="style4">
+                NEWS PAPER PROCLAMATION MONITORING SYSTEM&nbsp;</td>
+        </tr>
+    </table>
+    <table align="center" cellpadding="0" cellspacing="0" class="style1">
+        <tr valign="top">
+            <td valign="top" class="style2" align="center" colspan="2" 
+                style="font-size: medium; font-weight: bold; color: #000000;">
+                Welcome:<asp:Label ID="lbl_name" runat="server" ForeColor="Red"></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" class="style3" style="font-size: medium; font-weight: bold;">
+                smdb<asp:TreeView ID="TreeView1" runat="server">
+        <Nodes>
+            <asp:TreeNode Text="Home" Value="Home" Expanded="False" 
+                NavigateUrl="~/Admin/Home.aspx"></asp:TreeNode>
+        </Nodes>
+    </asp:TreeView>
+    <asp:TreeView ID="TreeView2" runat="server">
+        <Nodes>
+            <asp:TreeNode Expanded="False" Text="My Account" Value="My Account">
+                <asp:TreeNode Text="My Profile" Value="My Profile" 
+                    NavigateUrl="~/Admin/My_profile.aspx"></asp:TreeNode>
+                <asp:TreeNode Text="Change Password" Value="Change Password" 
+                    NavigateUrl="~/Admin/Change_Password.aspx"></asp:TreeNode>
+            </asp:TreeNode>
+        </Nodes>
+    </asp:TreeView>
+    <asp:TreeView ID="TreeView3" runat="server">
+        <Nodes>
+            <asp:TreeNode Expanded="False" Text="Advertisement Section" 
+                Value="Advertisement">
+                <asp:TreeNode Text="AddAdvertisement Details" Value="AddAdvertisement Details" 
+                    NavigateUrl="~/Admin/Add_advt_details.aspx">
+                </asp:TreeNode>
+                <asp:TreeNode Text="View Advertisement Details" 
+                    Value="View Advertisement Details" 
+                    NavigateUrl="~/Admin/View_Advt_details.aspx"></asp:TreeNode>
+            </asp:TreeNode>
+        </Nodes>
+    </asp:TreeView>
+    <asp:TreeView ID="TreeView4" runat="server">
+        <Nodes>
+            <asp:TreeNode Expanded="False" Text="Employee Section" Value="Employee Section">
+                <asp:TreeNode Text="Add Employee" Value="Add Employee" 
+                    NavigateUrl="~/Admin/Add_Employees.aspx"></asp:TreeNode>
+                <asp:TreeNode Text="View All employes" Value="View All employes" 
+                    NavigateUrl="~/Admin/View_Employees.aspx"></asp:TreeNode>
+            </asp:TreeNode>
+        </Nodes>
+    </asp:TreeView>
+    <asp:TreeView ID="TreeView5" runat="server" Height="31px" Font-Bold="True" 
+                    Font-Size="Medium">
+        <Nodes>
+            <asp:TreeNode Expanded="False" Text="Reports" Value="Reports">
+                <asp:TreeNode Text="Report on Employ Records" NavigateUrl="~/Admin/Report on Employee records.aspx" 
+                Value="Report on Employ Records">
+                </asp:TreeNode>
+                <asp:TreeNode Text="Report on Customer Records" NavigateUrl="~/Admin/Report on customer records.aspx" 
+                    Value="Report on Customer Records"></asp:TreeNode>
+                <asp:TreeNode Text="Report Based on advertisement Registration Date" NavigateUrl="~/Admin/Report based on Advt Reg date.aspx"
+                    Value="Report Based on advertisement Registration Date"></asp:TreeNode>
+                <asp:TreeNode Text="Report based on Advertisement Publishing date" NavigateUrl="~/Admin/Report based on Advt publishing date.aspx"
+                 
+                    Value="Report based on Advertisement Publishing date"></asp:TreeNode>
+            </asp:TreeNode>
+        </Nodes>
+    </asp:TreeView>
+            </td>
+            <td>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+    </table>
+&nbsp; <asp:TreeView ID="TreeView6" runat="server" style="margin-left: 761px" 
+        Width="133px">
+        <Nodes>
+            <asp:TreeNode Text="Signout" Value="Signout" NavigateUrl="~/login.aspx"></asp:TreeNode>
+        </Nodes>
+    </asp:TreeView>
+    </form>
+<p>
+    ss</p>
+</body>
+</html>

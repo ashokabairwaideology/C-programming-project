@@ -1,0 +1,55 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Default.Master" AutoEventWireup="true" CodeBehind="Editor.aspx.cs" Inherits="LiveDocs.livedocs.Editor" %>
+<<<<<<< HEAD
+=======
+<%@ Import Namespace="LiveDocs.backend.database" %>
+<%@ Import Namespace="System.Web.Services" %>
+<%@ Import Namespace="MySql.Data.MySqlClient" %>
+>>>>>>> 33c936d41e0667e92ef6ee640f17022e9eaa98f3
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    
+    
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MenuContentPlaceHolder" runat="server">
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="MainContentPlaceHolder" runat="server">
+    
+    <div id="EntireEditorArea" >
+        <asp:UpdatePanel ID="UpdatePanel1" UpdateMode="Conditional" runat="server">         
+            <ContentTemplate>
+                <asp:Timer ID="UpdateTimer" Interval="3000"  OnTick="Updatetimer_Tick" runat="server">
+             </asp:Timer>
+            
+            <div id="EditorMenubar">
+                <table >
+                    <tr>
+                        <td>
+                            <asp:ImageButton ID="BoldButton" OnClientClick="buttonClick('Bold'); return false;" AlternateText="Bold" runat="server" />
+                        </td>
+                        <td>
+                            <asp:ImageButton ID="ItalicButton" OnClientClick="buttonClick('Italic'); return false;" AlternateText="Italic" runat="server" />
+                        </td>
+                        <td>
+                            <asp:ImageButton ID="Underline" OnClientClick="buttonClick('Underline'); return false;" AlternateText="Underline" runat="server" />
+                        </td>
+                    </tr>
+                   
+                </table>
+        <div id="Wrapper" align="center">
+            <div id="InnerWrapperMarkup">
+                <textarea id="MarkupText" clientidmode="Static" onkeyup="updateOutput();"  autofocus="true" draggable="false" runat="server"></textarea>
+            </div>
+            <div id="InnerWrapperHtml">
+                <span id="HtmlText" clientidmode="Static" runat="server">
+                    
+                </span>
+                
+            </div>
+        </div>     
+            </div>            
+            </ContentTemplate>       
+        </asp:UpdatePanel>  
+      </div>
+                      
+ 
+    
+</asp:Content>

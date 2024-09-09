@@ -1,0 +1,12 @@
+Welcome to the demo shop of FreeWebshop.org. The free shopping cart script, written in PHP / MySQL.
+
+<img src=gfx/businessman.gif align=right>The software is completely in English, and has support for additional languages like Dutch.
+
+The advantages of FreeWebshop.org:<ul>
+<li><b>Simple</b> installation
+<li><b>Easy</b> configuration
+<li>Many <b>useful features</b> that simplify your work
+<li><b>Complete</b> order and customer management module
+<li><b>Free</b> support and updates
+<li>Support for payment portals like <b>Paypal and iDEAL</b> (add your own!)
+</ul>

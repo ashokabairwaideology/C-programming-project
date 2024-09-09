@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="FinacialManager.master.cs" Inherits="FinancialManager_FinacialManager" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            width: 720px;
+            height: 220px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div align="center">
+        <table class="style1">
+            <tr>
+                <td colspan="6">
+                    <img alt="cars" class="style2" src="cool%20cabs%20copy.jpg" /></td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:LinkButton ID="LinkButton1" runat="server" 
+                        PostBackUrl="~/FinancialManager/Home.aspx">Home</asp:LinkButton>
+                </td>
+                <td>
+                    <asp:LinkButton ID="LinkButton6" runat="server" 
+                        PostBackUrl="~/FinancialManager/viewprofile.aspx">View Profile</asp:LinkButton>
+                </td>
+                <td>
+                    <asp:LinkButton ID="LinkButton7" runat="server" 
+                        PostBackUrl="~/FinancialManager/Update Profile.aspx">UpdateProfile</asp:LinkButton>
+                </td>
+                <td>
+                    <asp:LinkButton ID="LinkButton3" runat="server" 
+                        PostBackUrl="~/FinancialManager/VenderBilling.aspx">VenderBilling</asp:LinkButton>
+                </td>
+                <td>
+                    <asp:LinkButton ID="LinkButton4" runat="server" 
+                        PostBackUrl="~/FinancialManager/ChangePassword.aspx">ChangePassword</asp:LinkButton>
+                </td>
+                <td>
+                    <asp:LinkButton ID="LinkButton5" runat="server" PostBackUrl="~/LoginPage.aspx">Logout</asp:LinkButton>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

@@ -1,0 +1,101 @@
+"Data Source=AKITS-CSE\\SQLEXPRESS;Initial Catalog=TimeManagement;Integrated Security=True"
+==============================
+=====================================
+==============================================
+else
+        {
+             
+            cmd = new SqlCommand("select * from empinsert", con);
+            cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                ename= dr[2].ToString();
+                epaswd = dr[4].ToString();
+            }
+            if (txt_name.Text == ename && txt_psw.Text == epaswd)
+            {
+                Response.Redirect("Emphome.aspx");
+            }
+            else
+            {
+                Response.Redirect("invalied");
+            }
+        }
+
++++=================================================
+    /*protected void Button1_Click(object sender, EventArgs e)
+    {
+        con.Open();
+        
+        cmd = new SqlCommand("select * from empinsert where uniqid=" + txt_id.Text + "", con);
+        dr = cmd.ExecuteReader();
+        while (dr.Read())
+        {
+            txt_fname.Text = dr[2].ToString();
+            txt_lname.Text = dr[3].ToString();
+            txt_psw.Text = dr[4].ToString();
+            txt_gen.Text = dr[5].ToString();
+            txt_pno.Text = dr[6].ToString();
+            txt_emai.Text = dr[7].ToString();
+            txt_atml.Text = dr[8].ToString();
+            txt_exc.Text = dr[9].ToString();
+            txt_doj.Text = dr[10].ToString();
+            txt_adress.Text = dr[11].ToString();
+            txt_city.Text = dr[12].ToString();
+            txt_state.Text = dr[13].ToString();
+            txt_cuntry.Text = dr[14].ToString();
+            txt_pinc.Text = dr[15].ToString();
+            txt_position.Text = dr[16].ToString();
+            txt_status.Text = dr[17].ToString();
+        }
+        
+        dr.Close();
+        con.Close();
+            
+        }
+
+
+    protected void btn_update_Click(object sender, EventArgs e)
+    {
+        con.Open();
+        cmd1=new SqlCommand("update empinsert set firstname='"+txt_fname.Text+"',lastname='"+txt_lname.Text+"',paswd='"+txt_psw.Text+"',gender='"+txt_gen.Text+"',phonenum='"+txt_pno.Text+"',email='"+txt_emai.Text+"',altemail='"+txt_atml.Text+"',exprnc='"+txt_exc.Text+"',dateofjoin='"+txt_doj.Text+"',address='"+txt_adress.Text+"',city='"+txt_city.Text+"',state='"+txt_state.Text+"',country='"+txt_cuntry.Text+"',pincode='"+txt_pinc.Text+"',position='"+txt_position.Text+"',status='"+txt_status.Text+"' where uniqid="+txt_id.Text+"",con);
+        cmd1.ExecuteNonQuery();
+        Response.Write("Updated");
+        con.Close();
+    }*/
+============
+onclick="btn_update_Click"
+
+========================================
+===========================================
+==============================================
+        con.Open();
+        string uname = txt_name.Text;
+        string psw = txt_psw.Text;
+        string sql="select * from empinsert";
+        cmd = new SqlCommand(sql, con);
+        dr = cmd.ExecuteReader();
+        while (dr.Read())
+        {
+            string name = dr[3].ToString();
+            string pw = dr[5].ToString();
+        }
+======================================
+==============================================
+=================================================
+create table assgto
+(
+allocateid int identity(1,1),
+projectid varchar(50),
+projectname varchar(50),
+allocateto varchar(50),
+status varchar(50)
+)
+ ===============================
+=========================
+=============
+ private void elseif(bool p)
+    {
+        throw new NotImplementedException();
+    }
+}      

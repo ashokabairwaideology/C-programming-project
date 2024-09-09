@@ -1,0 +1,8 @@
+1) Data base will be available in Bin folder = Travelz.mdb
+
+2) Login details
+
+Userid = Future
+Password= Point
+
+3)

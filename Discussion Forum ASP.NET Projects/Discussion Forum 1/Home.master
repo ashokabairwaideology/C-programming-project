@@ -1,0 +1,156 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Home.master.cs" Inherits="Home" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            height: 374px;
+        }
+        .style2
+        {
+            height: 92px;
+            font-weight: bold;
+            font-style: italic;
+            font-size: xx-large;
+            color: #CC00FF;
+        }
+        .style3
+        {
+        }
+        .style5
+        {
+            width: 668px;
+        }
+        .style6
+        {
+            width: 221px;
+            height: 56px;
+        }
+        .style8
+        {
+            width: 221px;
+            height: 42px;
+        }
+        .style9
+        {
+            width: 221px;
+            height: 43px;
+        }
+        .style12
+        {
+            width: 221px;
+            height: 44px;
+            font-family: BRU;
+        }
+        .style14
+        {
+            font-weight: normal;
+        }
+        .style15
+        {
+            font-family: "Brush Script MT";
+        }
+        .style16
+        {
+            font-family: "Brush Script MT";
+            font-size: x-large;
+        }
+        .style17
+        {
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        &nbsp;<table class="style1">
+            <tr>
+                <td class="style2" align="center">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Image ID="Image1" runat="server" Height="107px" 
+                        ImageUrl="~/Images/IMG2.jpg" Width="822px" />
+                    </td>
+            </tr>
+            <tr>
+                <td class="style3">
+                    <table class="style1">
+                        <tr>
+                            <td class="style6" align="center">
+                                &nbsp;&nbsp;&nbsp;&nbsp;<asp:LinkButton ID="LinkButton1" runat="server" style="font-size: xx-large; color: #000000; font-weight: 700; font-family: 'Brush Script MT';" 
+                                    PostBackUrl="~/Home.aspx">Home</asp:LinkButton>
+                            </td>
+                            <td class="style5" rowspan="6" valign="top">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p style="height: 374px; width: 528px">
+                <br />
+                <asp:Image ID="Image2" runat="server" Height="380px" 
+                    ImageUrl="~/Images/23-04-09 discussion usable.jpg" 
+                    style="margin-right: 3px; margin-top: 0px" Width="528px" />
+            </p>
+        
+        </asp:ContentPlaceHolder>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style12" align="center">
+                                <span class="style16">&nbsp;&nbsp;</span><span 
+                                    class="style14"><span class="style15"><span class="style17"><asp:LinkButton 
+                                    ID="LinkButton2" runat="server" 
+                                    PostBackUrl="~/Login.aspx" Font-Bold="True" Font-Size="X-Large" style="color: #000000; font-family: 'Brush Script MT'; font-size: xx-large;" 
+                                    >Login</asp:LinkButton>
+                                </span></span></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style8" align="center">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:LinkButton 
+                                    ID="LinkButton3" runat="server" 
+                        PostBackUrl="~/Registration.aspx" 
+                                    
+                                    style="font-size: xx-large; color: #000000; font-weight: 700; font-family: 'Brush Script MT';">Register</asp:LinkButton>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style8" align="center">
+                                &nbsp;&nbsp;&nbsp;&nbsp;<asp:LinkButton ID="LinkButton4" runat="server" onclick="LinkButton4_Click" 
+                                    
+                                    style="font-size: xx-large; color: #000000; font-weight: 700; font-family: 'Brush Script MT';">About Us</asp:LinkButton>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style9" align="center">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:LinkButton 
+                                    ID="LinkButton5" runat="server" 
+                                    
+                                    style="font-size: xx-large; font-weight: 700; color: #000000; font-family: 'Brush Script MT';">Contact Us</asp:LinkButton>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style8" valign="top" align="center">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:LinkButton ID="LinkButton6" runat="server" 
+                                    
+                                    style="font-size: xx-large; color: #000000; font-weight: 700; font-family: 'Brush Script MT';">More</asp:LinkButton>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <br />
+        <br />
+    </div>
+    </form>
+</body>
+</html>

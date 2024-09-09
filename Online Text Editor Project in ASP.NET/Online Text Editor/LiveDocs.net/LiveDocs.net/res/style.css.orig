@@ -1,0 +1,104 @@
+﻿/*
+General HTML tags
+*/
+body 
+{
+    font-family: Arial;
+    font-size: 10pt;
+}
+img {
+    border: 0px;
+}
+a, a:visited 
+{
+    font-family: Arial;
+    text-decoration: none;
+    color: royalblue;
+}
+
+/*
+Tag classes
+*/
+a.MenuLink {
+    color: darkblue;
+    text-decoration: none;
+}
+
+/*
+Special IDs
+*/
+#header {
+    border-bottom: 2px solid grey;
+    height: 115px;
+    width: 1000px;
+}
+
+#MainContent {
+    width: 1000px;
+}
+
+#login 
+{
+    position: absolute;
+    top: 12px;
+    left: 700px;
+    width: 202px;
+    height: 90px;
+    padding: 10px;
+    background-color: lightgrey;
+    vertical-align: middle;
+    border: 1px solid grey;
+    }
+#PublicMenu {
+    background-color: #cccccc;
+    font-family: Arial;
+    font-size: 12pt;
+    padding: 5px;
+    border-bottom: 1px solid gray;
+}
+
+<<<<<<< HEAD
+a.MenuLink {
+    color: darkblue;
+    text-decoration: none;
+}
+/*Editor */
+#EntireEditorArea {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+}
+#CollapsePanelControllers 
+{
+    width: 100%;
+}
+#Wrapper {
+    width: 100%;
+    height: 700px;
+    
+}
+#MarkupText {
+    overflow: auto;
+     resize: none; 
+     width: 100%; 
+     border: none;
+    height: 700px;
+}
+#InnerWrapperMarkup {
+    float: left;
+    width: 495px;
+    border-right: 0.5px black solid;
+}
+#InnerWrapperHtml {
+    float: right;
+    width: 495px;
+    text-align: left;
+    background-color: white;
+}
+#HtmlText {
+    width: 495px;
+    word-wrap: break-word;
+}
+/*Editor */
+=======
+>>>>>>> FeatureUserSystem

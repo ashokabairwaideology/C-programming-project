@@ -1,0 +1,234 @@
+﻿/*
+General HTML tags
+*/
+body 
+{
+    font-family: Arial;
+    font-size: 10pt;
+}
+img {
+    border: 0px;
+}
+a, a:visited 
+{
+    font-family: Arial;
+    text-decoration: none;
+    color: royalblue;
+}
+
+/*
+Tag classes
+*/
+a.MenuLink {
+    color: darkblue;
+    text-decoration: none;
+}
+
+a.DocumentButton {
+    border: 1px solid grey;
+    background-color: darkgray;
+    font-size: 12pt;
+    font-weight: bold;
+    padding: 10px;
+    color: whitesmoke;
+}
+
+/*
+Special IDs
+*/
+#ChatScrollContainer {
+    overflow: auto;
+    width: 400px;
+   height:200px; 
+}
+#ChatMinimizer 
+{
+    font-size: 30pt;
+        position:fixed;
+    right: 0px;
+    background-color: lightblue;
+    border: 1px solid grey;
+}
+#ChatMinimized {
+    position:fixed;
+    right: 0px;
+   bottom:0px;
+   
+    background-color: lightblue;
+    border: 2px solid grey;
+    
+}
+#ChatContainer {
+   height:100%;
+}
+#ChatMain 
+{
+    overflow: auto;
+     
+}
+#ChatPanel {
+     position:fixed;
+    right: 0px;
+   bottom:0px;
+    background-color: lightblue;
+    border: 2px solid grey;
+}
+#EditorMenubar {
+    background-color: #CCCCCC;
+    border-bottom: 1px solid grey;
+    padding: 5px;
+}
+#header {
+    border-bottom: 2px solid grey;
+    height: 115px;
+    width: 1000px;
+}
+
+#MainContent {
+    width: 1000px;
+}
+
+#login 
+{
+    position: absolute;
+    top: 12px;
+    left: 700px;
+    width: 202px;
+    height: 90px;
+    padding: 10px;
+    background-color: lightgrey;
+    vertical-align: middle;
+    border: 1px solid grey;
+    }
+#PublicMenu {
+    background-color: #cccccc;
+    font-family: Arial;
+    font-size: 12pt;
+    padding: 5px;
+    border-bottom: 1px solid gray;
+}
+/*Editor */
+#EntireEditorArea {
+    position: absolute;
+    margin-top: 25px;
+    width: inherit;
+    height: inherit;
+}
+#CollapsePanelControllers 
+{
+    width: 100%;
+}
+#Wrapper {
+    width: 100%;
+    height: 700px;
+    
+}
+#MarkupText {
+    overflow: auto;
+     resize: none; 
+     width: 100%; 
+     border: none;
+    height: 700px;
+}
+#InnerWrapperMarkup {
+    float: left;
+    width: 495px;
+    border-right: 0.5px black solid;
+}
+#InnerWrapperHtml {
+    float: right;
+    width: 495px;
+    text-align: left;
+    background-color: white;
+}
+#InnerWrapperRevisions {
+    float: right;
+    width: 200px;
+    text-align: left;
+    background-color: white;
+}
+#HtmlText {
+    width: 495px;
+    word-wrap: break-word;
+}
+
+
+/*Editor menubar*/
+#DropDownMenu 
+{
+    position: absolute;
+    width: inherit;
+    border-bottom: 0.5px solid gray;
+    background-color: lightgray;
+}
+#top-nav 
+{
+    
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#top-nav li {
+    position: relative;
+    width: 100px;
+    height: 20px;
+    display: block;
+    float: left;
+   
+
+}
+#top-nav li a {
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    background-color: lightgray;
+    display: block;
+    text-decoration: none;
+}
+#top-nav li a:hover 
+{
+    background-color: royalblue;
+    color: #fff;
+}
+#top-nav li a.selected {
+    background-color: royalblue;
+    color: #fff;
+}
+
+#top-nav li ul 
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;  
+}
+#top-nav li ul a 
+{
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    background-color: #fff;
+    display: block;
+    
+    color: #575757;
+    border-bottom: 1px dashed #ccc;    
+    text-decoration: none;
+}
+#top-nav li ul a:hover {
+    background-color: #ededed;
+    color: #575757;
+}
+
+
+.wrap 
+{
+    position: absolute;
+    z-index: 999;
+    -webkit-box-shadow: 0px 0px 9px #C0C0C0;
+    -moz-box-shadow: 0px 0px 9px #C0C0C0;
+    box-shadow: 0px 0px 9px #C0C0C0;
+    
+}
+#updateRevisionStatus {
+    padding-right: 5px;
+}

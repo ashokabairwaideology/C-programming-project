@@ -1,0 +1,21 @@
+Client: Radiant Integrated Technologies (http://www.radiantintech.com/tour_reservation.php)
+Project: Radiant Tour Reservation System 
+--------------------------------------------------------------------------------------------     
+                      Radiant Reservation System (RRS), A Integrated Software for tour 
+operating companies which comprises all the tour industry related and especially made
+ keeping view of South Africa, Tanzania and other East African countries. RRS helps the,
+ Tour Operating Companies, manage their Customers, Hotels, Vehicles and Agents and makes all
+ operations of the tour company easy and accurate.
+                       
+The Modules in the application are Admin Module handles the entire Master forms such as Staff 
+Master, Agent Master, and Transport Master etc. Hotel Module has all the details of the hotels 
+and there tariff according to the seasons and age groups. Itinerary Module has both Fixed 
+touring packages and custom itineraries in this reserving of hotels and vehicles etc has been 
+handled. The Billing Module used Crystal Reports to generate bills for the customer such as 
+advance amount paid and due bills, bill cancellation. The Tracking Module will track the 
+customer by dates, hotels, vehicles etc. MIS Reports where generated to keep track of the 
+revenue, agent’s performance, etc., Voucher where generated for the customer for all the 
+accommodation and transport facilities asked by the customer.
+
+Role : Involved in data base designing and coding of various screens, back-end  validations, and crystal report designing.
+

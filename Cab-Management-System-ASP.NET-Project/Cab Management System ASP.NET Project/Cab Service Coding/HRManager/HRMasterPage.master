@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="HRMasterPage.master.cs" Inherits="HRManager_HRMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            width: 803px;
+            height: 137px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table cellpadding="0" cellspacing="0" class="style1">
+            <tr>
+                <td colspan="8">
+                    <span lang="en-us">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+                    </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    &nbsp;</td>
+                <td colspan="5">
+                    <img alt="car" class="style2" src="cool%20cabs%20copy.jpg" /></td>
+            </tr>
+            <tr bgcolor="#FF9999">
+                <td>
+                    <asp:LinkButton ID="LinkButton1" runat="server" 
+                        PostBackUrl="~/HRManager/home.aspx">Home</asp:LinkButton>
+                </td>
+                <td>
+                    <asp:LinkButton ID="LinkButton2" runat="server" 
+                        PostBackUrl="~/HRManager/EmpRegistration.aspx">Employee</asp:LinkButton>
+                </td>
+                <td>
+                    <asp:LinkButton ID="LinkButton3" runat="server" 
+                        PostBackUrl="~/HRManager/ShiftTiming.aspx">Shift Timings</asp:LinkButton>
+                </td>
+                <td>
+                    <asp:LinkButton ID="LinkButton5" runat="server" 
+                        PostBackUrl="~/HRManager/ShiftSchedule.aspx">Shift Schedule</asp:LinkButton>
+                </td>
+                <td>
+                    <asp:LinkButton ID="LinkButton8" runat="server" 
+                        PostBackUrl="~/HRManager/ViewProfile.aspx">View Profile</asp:LinkButton>
+                </td>
+                <td>
+                    <asp:LinkButton ID="LinkButton9" runat="server" 
+                        PostBackUrl="~/HRManager/UpdateProfile.aspx">Update Profile</asp:LinkButton>
+                </td>
+                <td>
+                    <asp:LinkButton ID="LinkButton6" runat="server" 
+                        PostBackUrl="~/HRManager/changepassword.aspx">Change Password</asp:LinkButton>
+                </td>
+                <td>
+                    <asp:LinkButton ID="LinkButton7" runat="server" 
+                        PostBackUrl="~/LoginPage.aspx">Logout</asp:LinkButton>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <p>
+        </p>
+    </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

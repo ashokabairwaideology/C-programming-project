@@ -1,0 +1,492 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <MyType>WindowsForms</MyType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BB88559B-E94A-4801-959B-A46C99A1D653}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>RI_HRM</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>RI_HRM.My.MyApplication</StartupObject>
+    <AssemblyMajorVersion>1</AssemblyMajorVersion>
+    <AssemblyMinorVersion>0</AssemblyMinorVersion>
+    <AssemblyRevisionNumber>0</AssemblyRevisionNumber>
+    <GenerateRevisionNumber>False</GenerateRevisionNumber>
+    <AssemblyCompanyName>Raksha Infotech</AssemblyCompanyName>
+    <RootNamespace>RI_HRM</RootNamespace>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>.\bin\</OutputPath>
+    <DocumentationFile>RI_HRM.xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DefineDebug>True</DefineDebug>
+    <DefineTrace>True</DefineTrace>
+    <DefineConstants>Win32=True</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>.\bin\</OutputPath>
+    <DocumentationFile>RI_HRM.xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DefineDebug>False</DefineDebug>
+    <DefineTrace>True</DefineTrace>
+    <DefineConstants>Win32=True</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility">
+      <Name>Microsoft.VisualBasic.Compatibility</Name>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.Compatibility.Data">
+      <Name>Microsoft.VisualBasic.Compatibility.Data</Name>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.XML">
+      <Name>System.XML</Name>
+    </Reference>
+    <COMReference Include="ADODB">
+      <Guid>{EF53050B-882E-4776-B643-EDA472E8E3F2}</Guid>
+      <Lcid>0</Lcid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+    <COMReference Include="AxMSComCtl2">
+      <Guid>{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}</Guid>
+      <Lcid>0</Lcid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <WrapperTool>aximp</WrapperTool>
+    </COMReference>
+    <COMReference Include="AxMSFlexGridLib">
+      <Guid>{5E9E78A0-531B-11CF-91F6-C2863C385E30}</Guid>
+      <Lcid>0</Lcid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <WrapperTool>aximp</WrapperTool>
+    </COMReference>
+    <COMReference Include="MSComCtl2">
+      <Guid>{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}</Guid>
+      <Lcid>0</Lcid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="MSDataReportLib">
+      <Guid>{642AC760-AAB4-11D0-8494-00A0C90DC8A9}</Guid>
+      <Lcid>0</Lcid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="MSDATASRC">
+      <Guid>{7C0FFAB0-CD84-11D0-949A-00A0C91110ED}</Guid>
+      <Lcid>0</Lcid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+    <COMReference Include="MSFlexGridLib">
+      <Guid>{5E9E78A0-531B-11CF-91F6-C2863C385E30}</Guid>
+      <Lcid>0</Lcid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="StdFormat">
+      <Guid>{6B263850-900B-11D0-9484-00A0C91110ED}</Guid>
+      <Lcid>0</Lcid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <Lcid>0</Lcid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Microsoft.VisualBasic.Compatibility" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="DataEnvironment1.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EdForm.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>EdForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EdForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="empdetail.Designer.vb">
+      <DependentUpon>empdetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="empdetail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpForm.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>ExpForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ExpForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntLetRep.Designer.vb">
+      <DependentUpon>IntLetRep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IntLetRep.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntRep.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IntRep.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="IntViewForm.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>IntViewForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IntViewForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntViewLetForm.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>IntViewLetForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IntViewLetForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JobOpenForm.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>JobOpenForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JobOpenForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginAdminForm.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>LoginAdminForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginAdminForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm1.Designer.vb">
+      <DependentUpon>LoginForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasBrForm.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>MasBrForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasBrForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasEdForm.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>MasEdForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasEdForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasPgForm.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>MasPgForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasPgForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasSkillForm.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>MasSkillForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasSkillForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatchForm.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>MatchForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MatchForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIForm1.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>MDIForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDIForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Pay.Designer.vb">
+      <DependentUpon>Pay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment.Designer.vb">
+      <DependentUpon>Payment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recruitform.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>Recruitform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Recruitform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResumeForm.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>ResumeForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ResumeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SkillForm.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>SkillForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SkillForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrainigPrint.Designer.vb">
+      <DependentUpon>TrainigPrint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TrainigPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Training.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Training.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="trainingForm.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>trainingForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="trainingForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrainingSelForm.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>TrainingSelForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TrainingSelForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrainyTest.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>TrainyTest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TrainyTest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="EdForm.resX">
+      <DependentUpon>EdForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="empdetail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>empdetail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpForm.resX">
+      <DependentUpon>ExpForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntLetRep.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>IntLetRep.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntRep.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>IntRep.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntViewForm.resX">
+      <DependentUpon>IntViewForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntViewLetForm.resX">
+      <DependentUpon>IntViewLetForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobOpenForm.resX">
+      <DependentUpon>JobOpenForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginAdminForm.resX">
+      <DependentUpon>LoginAdminForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LoginForm1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasBrForm.resX">
+      <DependentUpon>MasBrForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasEdForm.resX">
+      <DependentUpon>MasEdForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasPgForm.resX">
+      <DependentUpon>MasPgForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasSkillForm.resX">
+      <DependentUpon>MasSkillForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatchForm.resX">
+      <DependentUpon>MatchForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIForm1.resX">
+      <DependentUpon>MDIForm1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pay.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Pay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Payment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recruitform.resX">
+      <DependentUpon>Recruitform.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResumeForm.resX">
+      <DependentUpon>ResumeForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SkillForm.resX">
+      <DependentUpon>SkillForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrainigPrint.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TrainigPrint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Training.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Training.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="trainingForm.resX">
+      <DependentUpon>trainingForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrainingSelForm.resX">
+      <DependentUpon>TrainingSelForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrainyTest.resX">
+      <DependentUpon>TrainyTest.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="images\hrms.gif" />
+    <None Include="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

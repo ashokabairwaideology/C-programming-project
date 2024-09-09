@@ -1,0 +1,222 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="admin_MasterPage" %>
+
+<%@ Register assembly="EO.Web" namespace="EO.Web" tagprefix="eo" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>INFOCUS SERVICE DESK</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 104%;
+            height: 31px;
+            margin-right: 0px;
+        }
+        .style4
+        {
+            height: 5px;
+        }
+        .style6
+        {
+            font-family: "Times New Roman", Times, serif;
+            font-size: xx-large;
+            color: #3399FF;
+        }
+        .style7
+        {
+            font-size: xx-large;
+            color: #3399FF;
+        }
+        .style8
+        {
+            height: 5px;
+            }
+        .style9
+        {
+            width: 100%;
+            height: 111px;
+            margin-bottom: 0px;
+        }
+        .style10
+        {
+            color: #FF0066;
+            font-size: large;
+            font-weight: bold;
+        }
+        </style>
+</head>
+<body background="../IMAGES/wallpapersmaniannmru-vol55004.jpg">
+    <form id="form1" runat="server">
+    <div style="width: 1295px; margin-left: -15px; margin-top: -15px; padding-left: 0px; margin-bottom: 0px;">
+        <asp:Image ID="Image1" runat="server" Height="113px" Width="1354px" 
+            ImageUrl="~/IMAGES/HelpDesk2-horz.jpg" />
+        <br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="style7">&nbsp;&nbsp;&nbsp;&nbsp;INFOCUS </span><span class="style6">IT 
+        SERVICE DESK</span><br />
+        <table class="style1">
+            <tr>
+                <td class="style10" align="right">
+                    <eo:Menu ID="Menu1" runat="server" ControlSkinID="None" 
+                        DesignOptions-BackColor="ActiveBorder" 
+                        
+                        
+                        
+                        
+                        
+                        
+                        style="margin-left: 0px; margin-right: 0px ; margin-top: 0px; margin-bottom: 7px;" Width="1349px" 
+                        TopLevelItemAlign="None" ScrollDownLookID="None">
+                        <LookItems>
+                            <eo:MenuItem Image-HoverUrl="00000306" Image-Mode="TextBackground" 
+                                Image-Url="00000300" ItemID="_TopLevelItem" LeftIcon-HoverUrl="00000304" 
+                                LeftIcon-Url="00000300" RightIcon-HoverUrl="00000305" RightIcon-Url="00000300">
+                                <SubMenu OffsetX="0" OffsetY="-6" ShadowDepth="0" 
+                                    Style-CssText="font-size: 12px; cursor: hand; font-family: arial; background-color: #f7f7f7;">
+                                </SubMenu>
+                            </eo:MenuItem>
+                            <eo:MenuItem Height="23" 
+                                HoverStyle-CssText="background-color:#dddddd;border-left-color:#dfdfdf;border-left-style:solid;border-left-width:1px;border-right-color:#dfdfdf;border-right-style:solid;border-right-width:1px;color:#C00000;" 
+                                ItemID="_Default" 
+                                NormalStyle-CssText="border-right: #dfdfdf 1px solid; border-left: #dfdfdf 1px solid; color: #333333" 
+                                Text-Padding-Left="7" Text-Padding-Right="20">
+                            </eo:MenuItem>
+                            <eo:MenuItem Image-Mode="TextBackground" Image-Url="00000314" 
+                                ItemID="separator" LeftIcon-Url="00000313" RightIcon-Url="00000315">
+                            </eo:MenuItem>
+                            <eo:MenuItem Image-Mode="TextBackground" Image-Url="00000312" 
+                                ItemID="submenu_bottom" LeftIcon-Url="00000310" RightIcon-Url="00000311">
+                            </eo:MenuItem>
+                            <eo:MenuItem Image-Mode="TextBackground" Image-Url="00000307" 
+                                ItemID="submenu_top" LeftIcon-Url="00000308" RightIcon-Url="00000309">
+                            </eo:MenuItem>
+                        </LookItems>
+                        <TopGroup ItemSpacing="200" 
+                            
+                            
+                            
+                            
+                            Style-CssText="background-image:url(00000300);border-bottom-style:solid;border-left-color:#e0e0e0;border-left-style:solid;border-left-width:1px;border-right-style:solid;border-top-style:solid;color:#666666;cursor:hand;font-family:arial;font-size:12px;padding-bottom:0px;padding-top:0px;">
+                            <Items>
+                                <eo:MenuItem LookID="None" Text-Html="Home" 
+                                    Text-HorizontalAlign="Center" HoverStyle-CssText="color:#ff3300;" 
+                                    NavigateUrl="~/admin/Home.aspx">
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="Account Settings" HoverStyle-CssText="color:#ff3300;" 
+                                    LookID="None">
+                                    <SubMenu>
+                                        <Items>
+                                            <eo:MenuItem 
+                                                Text-Html="Change Password" NavigateUrl="~/admin/Change_password.aspx">
+                                            </eo:MenuItem>
+                                        </Items>
+                                    </SubMenu>
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="Profile Settings" HoverStyle-CssText="color:#ff3300;" 
+                                    LookID="None">
+                                    <submenu>
+                                        <Items>
+                                            <eo:MenuItem Text-Html="View Profile" NavigateUrl="~/admin/View_Profile.aspx">
+                                            </eo:MenuItem>
+                                            <eo:MenuItem NavigateUrl="~/admin/Update_Profile.aspx" 
+                                                Text-Html="Update Profile">
+                                            </eo:MenuItem>
+                                        </Items>
+                                    </submenu>
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="Log Out" HoverStyle-CssText="color:#ff3300;" 
+                                    LookID="None" NavigateUrl="~/login.aspx">
+                                </eo:MenuItem>
+                            </Items>
+                        </TopGroup>
+                    </eo:Menu>
+                </td>
+            </tr>
+            </table>
+        <table class="style1">
+            <tr>
+                <td valign="top" class="style8">
+                    &nbsp;</td>
+                <td class="style4" style="color: #FFFFFF">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    WELCOME:<asp:Label ID="lblname" runat="server" Font-Bold="True"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" class="style8">
+                    <table class="style9">
+                        <tr>
+                            <td  valign="top" align="left" class="Style1" 
+                                style="font-family: Rockwell; font-size: xx-large; color: #CC3300;">
+                                QUICK LINKS<br />
+                                <eo:SlideMenu ID="SlideMenu1" runat="server" ControlSkinID="None" 
+                                    SingleExpand="False" Width="220px">
+                                    <TopGroup>
+                                        <Items>
+                                            <eo:MenuItem Text-Html="EMPLOYEE INFORMATION">
+                                                <SubMenu>
+                                                    <Items>
+                                                        <eo:MenuItem NavigateUrl="~/admin/Create_employee.aspx" 
+                                                            Text-Html="Create Employee">
+                                                        </eo:MenuItem>
+                                                        <eo:MenuItem NavigateUrl="~/admin/Modify1.aspx" 
+                                                            Text-Html="Modify Employee">
+                                                        </eo:MenuItem>
+                                                        <eo:MenuItem NavigateUrl="~/admin/Delete_employee.aspx" 
+                                                            Text-Html="Delete Employee">
+                                                        </eo:MenuItem>
+                                                        <eo:MenuItem NavigateUrl="~/admin/View_employees.aspx" 
+                                                            Text-Html="View Employees">
+                                                        </eo:MenuItem>
+                                                    </Items>
+                                                </SubMenu>
+                                            </eo:MenuItem>
+                                            <eo:MenuItem Text-Html="REQUESTS INFORMATION">
+                                                <SubMenu>
+                                                    <Items>
+                                                        <eo:MenuItem Text-Html="View All Requsts" 
+                                                            NavigateUrl="~/admin/View_Requests.aspx">
+                                                        </eo:MenuItem>
+                                                    </Items>
+                                                </SubMenu>
+                                            </eo:MenuItem>
+                                        </Items>
+                                    </TopGroup>
+                                    <LookItems>
+                                        <eo:MenuItem ItemID="_TopGroup">
+                                            <SubMenu LeftIconCellWidth="10" 
+                                                Style-CssText="border-right: #beb6a4 1px solid; font-weight: bold; font-size: 12px; border-left: #beb6a4 1px solid; cursor: hand; color: #4a4a44; font-family: verdana">
+                                            </SubMenu>
+                                        </eo:MenuItem>
+                                        <eo:MenuItem Height="30" Image-Mode="ItemBackground" Image-Url="00000600" 
+                                            ItemID="_TopLevelItem">
+                                            <SubMenu LeftIconCellWidth="10" 
+                                                Style-CssText="color:#555544;font-family:Verdana;font-size:12px;font-weight:normal;">
+                                            </SubMenu>
+                                        </eo:MenuItem>
+                                        <eo:MenuItem Height="34" Image-HoverUrl="00000602" Image-Mode="ItemBackground" 
+                                            Image-Url="00000601" ItemID="_Default">
+                                        </eo:MenuItem>
+                                    </LookItems>
+                                </eo:SlideMenu>
+                            </td>
+                        </tr>
+                        </table>
+                </td>
+                <td class="style4">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <br />
+    </div>
+    </form>
+</body>
+</html>

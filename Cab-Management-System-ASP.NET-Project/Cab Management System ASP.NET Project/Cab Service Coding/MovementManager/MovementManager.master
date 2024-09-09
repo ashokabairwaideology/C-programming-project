@@ -1,0 +1,92 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MovementManager.master.cs" Inherits="MovementManager_MovementManager" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            width: 720px;
+            height: 155px;
+        }
+        .style3
+        {
+            width: 148px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table cellpadding="0" cellspacing="0" class="style1">
+            <tr>
+                <td colspan="12">
+                    <span lang="en-us">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+                    <img align="middle" alt="car" class="style2" src="cool%20cabs%20copy.jpg" /></td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:LinkButton ID="LinkButton1" runat="server" 
+                        PostBackUrl="~/MovementManager/Home.aspx">Home</asp:LinkButton>
+                </td>
+                <td align="center" class="style3">
+                    <asp:LinkButton ID="LinkButton11" runat="server" onclick="LinkButton11_Click" 
+                        PostBackUrl="~/MovementManager/CityDetails.aspx">Add 
+                    Citys</asp:LinkButton>
+                </td>
+                <td align="center" class="style3">
+                    <asp:LinkButton ID="LinkButton13" runat="server" 
+                        PostBackUrl="~/MovementManager/View Profile.aspx">View Profile</asp:LinkButton>
+                </td>
+                <td align="center" class="style3">
+                    <asp:LinkButton ID="LinkButton14" runat="server" 
+                        PostBackUrl="~/MovementManager/Update Profile.aspx">Update Profile</asp:LinkButton>
+                </td>
+                <td align="center">
+                    <asp:LinkButton ID="LinkButton12" runat="server" 
+                        PostBackUrl="~/MovementManager/ViewCityDetails.aspx">Edit/DeleteCityDetails</asp:LinkButton>
+                </td>
+                <td>
+                    <asp:LinkButton ID="LinkButton3" runat="server" 
+                        PostBackUrl="~/MovementManager/RouteDetails.aspx">RouteDetails</asp:LinkButton>
+                </td>
+                <td>
+                    <asp:LinkButton ID="LinkButton4" runat="server" 
+                        PostBackUrl="~/MovementManager/SearchRouteDetails.aspx">RouteSearch</asp:LinkButton>
+                </td>
+                <td>
+                    <asp:LinkButton ID="LinkButton5" runat="server">ShiftSearch</asp:LinkButton>
+                </td>
+                <td align="center">
+                    <asp:LinkButton ID="LinkButton6" runat="server" 
+                        PostBackUrl="~/MovementManager/VehicleSearch.aspx">VehicleSearch</asp:LinkButton>
+                </td>
+                <td align="center">
+                    <asp:LinkButton ID="LinkButton7" runat="server" 
+                        PostBackUrl="~/MovementManager/VehicleAllocationDetails.aspx">VehicleAlloction</asp:LinkButton>
+                </td>
+                <td align="center">
+                    <asp:LinkButton ID="LinkButton9" runat="server" 
+                        PostBackUrl="~/MovementManager/ChangePassword.aspx">ChangePassword</asp:LinkButton>
+                </td>
+                <td align="right">
+                    <asp:LinkButton ID="LinkButton10" runat="server" 
+                        PostBackUrl="~/LoginPage.aspx">LogOut</asp:LinkButton>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

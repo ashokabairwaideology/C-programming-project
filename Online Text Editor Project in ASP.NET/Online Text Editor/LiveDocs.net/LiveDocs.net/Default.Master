@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="LiveDocs.pages.pub.MasterDefault" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    
+    <link href="res/style.css" rel="stylesheet" type="text/css" />
+    
+    
+    
+    <link href="/res/jquerythemes/ui-lightness/jquery-ui-1.8.18.custom.css" rel="stylesheet"
+        type="text/css" />
+    <script src="/res/scripts/JQuery/jquery-1.4.4.js" type="text/javascript"></script>
+    <script src="/res/scripts/JQuery/jquery-ui-1.8.18.js" type="text/javascript"></script>
+    <script src="/res/scripts/master.js" type="text/javascript"></script>
+    <script src="/res/scripts/common.js" type="text/javascript"></script>
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <title>LiveDocs 1.0 BETA</title>
+</head>
+<body> 
+         <form id="form1" runat="server">
+             <asp:ScriptManager ID="ScriptManager1" EnablePageMethods="True" runat="server">
+        <Scripts>
+                    <asp:ScriptReference Path="/res/scripts/master.js" />
+                    <asp:ScriptReference Path="/res/scripts/common.js" />
+                </Scripts>
+                <Services>
+                    <asp:ServiceReference Path="/services/ResetPassword.asmx" />
+                </Services>
+    </asp:ScriptManager>
+            <img id="logo" alt="Logo" src="/res/logo.png"  />
+            <div id="login">
+                <asp:PlaceHolder ID="LoginPlaceHolder" runat="server">
+                    <table>
+                        <tr>
+                            <td>
+                                Username:&nbsp; 
+                            </td>
+                            <td>
+                                <asp:TextBox ID="UsernameTextBox" runat="server" Width="100px"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Password:</td>
+                            <td>
+                                <asp:TextBox ID="PasswordTextBox" runat="server" Width="100px" TextMode="Password"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#" ID="forgottenPasswordLink" onclick="openForgottenPasswordDialog()">Forgotten Password</a>
+                            </td>
+                            <td>
+                               <asp:Button ID="Button2" CausesValidation="False" runat="server" Height="20px" Text="Log in" onclick="LoginButton_Click"  />
+                            </td>
+                        </tr>
+                    </table>
+                    
+                </asp:PlaceHolder> 
+                <div id="forgottenPasswordDialog" title="Please enter your e-mail to reset your password">
+                        <table>
+                            <tr>
+                                <td>E-mail:</td>
+                                <td>
+                                    <input type="text" ID="ResetPasswordEmailTextbox" /></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <input id="Button1" type="button" value="Reset Password" onclick="ResetPassword()" /></td>
+                            </tr>
+                        </table>
+                    </div>
+         </div>
+    <div>
+        
+        <div id="MainContent">
+            <div id="PublicMenu">
+                <asp:ContentPlaceHolder ID="MenuContentPlaceHolder" runat="server">
+                   
+                </asp:ContentPlaceHolder>
+            </div>
+        <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,164 @@
+[Root]
+Most Recent Package=GAMS
+
+
+[Package|GAMS|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Program Files\GAMS
+
+[Package|GAMS|Configure DAO ISAMs]
+Applicable=Yes
+Jet 2.x=No
+
+[Package|GAMS|Configure DAO ODBC]
+JetWorkspace=No
+ODBCDirect=Yes
+
+[Package|GAMS|Files Found]
+
+[Package|GAMS|Files Released]
+
+[Package|GAMS|Missing Dependency Information]
+C:\Program Files\Seagate Software\Report Designer Component\crystalwizard.dll=
+C:\Program Files\Seagate Software\Report Designer Component\craxdui.dll=
+C:\Program Files\Seagate Software\Report Designer Component\craxdrt.dll=
+C:\Program Files\Common Files\System\ado\msado27.tlb=
+C:\WINDOWS\system32\crystalwizard.dll=
+C:\WINDOWS\system32\craxdui.dll=
+C:\WINDOWS\system32\craxddrt.dll=
+C:\WINDOWS\system32\craxdrt.dll=
+C:\WINDOWS\system32\crviewer.dll=
+
+[Package|GAMS|Out-of-Date Dependency Information]
+C:\WINDOWS\system32\MSRDO20.DLL=
+C:\WINDOWS\system32\MSCOMCTL.OCX=
+C:\WINDOWS\system32\MSSTDFMT.DLL=
+
+[Package|GAMS|Files Added]
+
+[Package|GAMS|Files Removed]
+
+[Package|GAMS|Files In Project]
+C:\Documents and Settings\XPMUser\My Documents\New Project\Project1.exe=Yes
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\WINDOWS\system32\oleaut32.dll=Yes
+C:\WINDOWS\system32\olepro32.dll=Yes
+C:\WINDOWS\system32\asycfilt.dll=Yes
+C:\WINDOWS\system32\stdole2.tlb=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Program Files\Common Files\Microsoft Shared\DAO\DAO350.DLL=Yes
+C:\WINDOWS\system32\MSJET35.DLL=Yes
+C:\WINDOWS\system32\MSJTER35.DLL=Yes
+C:\WINDOWS\system32\MSJINT35.DLL=Yes
+C:\WINDOWS\system32\vbajet32.dll=Yes
+C:\WINDOWS\system32\expsrv.dll=Yes
+C:\WINDOWS\system32\MSRD2X35.DLL=Yes
+C:\WINDOWS\system32\MSREPL35.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=Yes
+C:\WINDOWS\system32\VB5DB.DLL=Yes
+C:\Program Files\Common Files\System\ado\msado27.tlb=Yes
+C:\Program Files\Common Files\designer\MSDERUN.DLL=Yes
+C:\WINDOWS\system32\MSDBRPTR.DLL=Yes
+C:\WINDOWS\system32\MSSTDFMT.DLL=Yes
+C:\WINDOWS\system32\MSBIND.DLL=Yes
+C:\WINDOWS\system32\COMCT232.OCX=Yes
+C:\WINDOWS\system32\MSCOMCT2.OCX=Yes
+C:\WINDOWS\system32\MSCOMCTL.OCX=Yes
+C:\WINDOWS\system32\MSRDO20.DLL=Yes
+C:\WINDOWS\system32\RDOCURS.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\WINDOWS\system32\crviewer.dll=Yes
+C:\WINDOWS\system32\craxdui.dll=Yes
+
+[Package|GAMS|Configure Registry Files]
+Applicable=No
+
+[Package|GAMS|Configure Remote Servers]
+Applicable=No
+
+[Package|GAMS|Install Locations]
+C:\Documents and Settings\XPMUser\My Documents\New Project\Project1.exe=$(AppPath)
+C:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Common Files\Microsoft Shared\DAO\DAO350.DLL=$(MSDAOPath)
+C:\WINDOWS\system32\MSJET35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\MSJTER35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\MSJINT35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\vbajet32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\expsrv.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\MSRD2X35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\MSREPL35.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\VB5DB.DLL=$(WinSysPath)
+C:\Program Files\Common Files\System\ado\msado27.tlb=$(WinSysPath)
+C:\Program Files\Common Files\designer\MSDERUN.DLL=$(CommonFiles)\designer
+C:\WINDOWS\system32\MSDBRPTR.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSSTDFMT.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSBIND.DLL=$(WinSysPath)
+C:\Program Files\Seagate Software\Viewers\ActiveXViewer\crviewer.dll=$(WinSysPath)
+C:\Program Files\Seagate Software\Report Designer Component\craxdrt.dll=$(WinSysPath)
+C:\Program Files\Seagate Software\Report Designer Component\craxddrt.dll=$(WinSysPath)
+C:\WINDOWS\system32\implode.dll=$(WinSysPath)
+C:\WINDOWS\system32\Crpaig80.dll=$(WinSysPath)
+C:\WINDOWS\system32\msvcrt.dll=$(WinSysPath)
+C:\WINDOWS\system32\mfc42.dll=$(WinSysPath)
+\program files\seagate software\shared\SSCSDK80.DLL=$(WinSysPath)
+\program files\seagate software\shared\PG32CONV.DLL=$(AppPath)
+C:\WINDOWS\system32\P2smon.dll=$(WinSysPath)
+C:\Program Files\Seagate Software\Report Designer Component\craxdui.dll=$(WinSysPath)
+C:\Program Files\Seagate Software\Report Designer Component\crystalwizard.dll=$(WinSysPath)
+C:\WINDOWS\system32\COMCT232.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSCOMCT2.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSRDO20.DLL=$(WinSysPath)
+C:\WINDOWS\system32\RDOCURS.DLL=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\WINDOWS\system32\crviewer.dll=$(WinSysPath)
+C:\WINDOWS\system32\craxdrt.dll=$(WinSysPath)
+C:\WINDOWS\system32\craxddrt.dll=$(WinSysPath)
+C:\WINDOWS\system32\craxdui.dll=$(WinSysPath)
+C:\WINDOWS\system32\crystalwizard.dll=$(WinSysPath)
+
+[Package|GAMS|Configure Shared Files]
+Applicable=Yes
+C:\Documents and Settings\XPMUser\My Documents\New Project\Project1.exe=No
+\program files\seagate software\shared\PG32CONV.DLL=No
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=No
+
+[Package|GAMS|Distribution]
+Type=single
+Size=
+Title=Gas Agency Management System
+
+[Package|GAMS|Package]
+PackageFolder=C:\Program Files\GAMS
+ProjectFolder=C:\Documents and Settings\XPMUser\My Documents\New Project
+ServerSideCab=
+File1=C:\Program Files\GAMS\setup.exe
+File2=C:\Program Files\GAMS\Setup.Lst
+File3=C:\Program Files\GAMS\Project1.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+[Package|GAMS|IconGroups]
+Group0=Gas Agency Management System
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|GAMS|Gas Agency Management System]
+Icon1=Project1.EXE
+Title1=Gas Agency Management System
+StartIn1=$(AppPath)
+Key1=Icon1

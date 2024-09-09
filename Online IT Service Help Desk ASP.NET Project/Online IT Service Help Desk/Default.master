@@ -1,0 +1,88 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Default.master.cs" Inherits="_Default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>INFOCUS SERVICE DESK</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            height: 200px;
+            margin-left: 0px;
+        }
+        .style3
+        {
+            font-weight: bold;
+            font-family: "Agency FB";
+            font-size: xx-large;
+            height: 50px;
+        }
+        .style5
+        {
+            height: 267px;
+            width: 852px;
+            font-family: "Agency FB";
+            font-size: xx-large;
+        }
+        .style6
+        {
+            font-weight: bold;
+            font-family: "Agency FB";
+            font-size: xx-large;
+            height: 50px;
+            width: 852px;
+        }
+        #form1
+        {
+            margin-left: -15px;
+            margin-top: -15px;
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+<body background="IMAGES/arthouse-twilight-silver-plain-metallic-effect-wallpaper-_1319645171.jpg">
+    <form id="form1" runat="server">
+    <div>
+        
+        
+            <table class="style1">
+                <tr>
+                    <td colspan="2" align="center">
+                        <asp:Image ID="Image1" runat="server" Height="104px" 
+                            ImageUrl="~/IMAGES/it services.gif" style="margin-left: -20px; margin-top: -15px;" 
+                            Width="1374px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" class="style3" colspan="2" style="color: #66CCFF">
+                        IT SERVICE DESK</td>
+                </tr>
+                <tr>
+                    <td align="center" class="style6">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;
+                    </td>
+                    <td align="center" class="style6" 
+                        style="color: #00FF00; font-family: 'Courier New', Courier, monospace">
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="style5" style="color: #FFFFFF">
+                        Welcome to I.T SERVICE DESK<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a single hub resolver for multiple issues</td>
+                    <td class="style5">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+            </table>
+        
+      
+    </div>
+    </form>
+</body>
+</html>

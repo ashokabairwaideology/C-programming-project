@@ -1,0 +1,6 @@
+name = Assignment Feedback
+description = IIT Bombay Spoken Tutorial Project
+package = IITB
+version = VERSION
+core = 6.x
+
